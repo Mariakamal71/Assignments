@@ -1,0 +1,51 @@
+#id {
+    text-align: center;
+    font-style: italic;
+}
+
+.section-heading,
+h2,
+line {
+    text-align: center;
+    font-style: italic;
+}
+
+
+.cards {
+    overflow: auto;
+}
+
+
+
+
+
+.card {
+    text-align: center;
+    float: left;
+    width: calc(100% /3);
+
+    box-sizing: border-box;
+    padding: 10px;
+    transition: background-color 2s linear, width 2s ease-in, ease-out;
+    font-style: italic;
+
+
+}
+
+.inner {
+    background-color: rgba(219, 217, 214, 0.158);
+}
+
+.rounded-button {
+
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 10px 10px;
+    background-color: #007bff;
+    color: white;
+    font-style: italic;
+    position: fixed;
+    bottom: 150px;
+    left: 50%;
+
+}
