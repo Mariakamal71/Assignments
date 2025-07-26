@@ -1,0 +1,229 @@
+#About {
+    padding: 20px 20px;
+}
+
+.main-heading {
+    text-align: center;
+    width: 70%;
+    margin: 20px auto;
+}
+
+.main-heading h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.main-heading h2::after {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 3px;
+    background: rgb(8, 8, 160);
+    top: 100%;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: -10px;
+}
+
+.main-heading h2::before {
+    position: absolute;
+    content: "A";
+    font-size: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50%;
+    opacity: 0.06;
+}
+
+.main-heading p {
+    color: #5c5959;
+}
+
+.about-con {
+    display: flex;
+
+}
+
+.about-con .about-con-left {
+    width: 50%;
+}
+
+.about-con .about-con-left p {
+    margin-bottom: 10px;
+    color: #5c5959;
+}
+
+.about-con .about-con-right {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.about-con .about-con-right .about-skills {
+    margin-bottom: 10px;
+}
+
+.about-con .about-con-right .about-skills .span {
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.about-con .about-con-right .about-skills .progress {
+    height: 5px;
+    background-color: #999;
+    border-radius: 10px;
+}
+
+.about-con .about-con-right .about-skills .progress .inner-progress {
+    background-color: red;
+    width: 80%;
+    border-radius: 10px;
+    height: 100%;
+    position: relative;
+}
+
+
+
+.about-content .about-content-right .about-skills .progress .inner-progress {
+    background: red;
+    height: 100%;
+    border-radius: 10px;
+    width: 80%;
+    position: relative;
+}
+
+.about-con .about-con-right .about-skills .progress .inner-progress::before {
+    position: absolute;
+    content: "80%";
+    right: 0;
+    top: -24px;
+}
+
+.about-con .about-con-right .about-skills:nth-child(2) .progress .inner-progress::before {
+    content: "95%";
+}
+
+.about-con .about-con-right .about-skills:nth-child(3) .progress .inner-progress::before {
+    content: "85%";
+}
+
+.about-con .about-con-right .about-skills:nth-child(4) .progress .inner-progress::before {
+    content: "70%";
+}
+
+.about-con .about-con-right .about-skills:nth-child(2) .progress .inner-progress {
+    width: 95%;
+}
+
+.about-con .about-con-right .about-skills:nth-child(3) .progress .inner-progress {
+    width: 85%;
+}
+
+.about-con .about-con-right .about-skills:nth-child(4) .progress .inner-progress {
+    width: 70%;
+}
+
+@media screen and(max-width:992px) {
+
+    .about-con .about-con-right,
+    .about-con .about-con-left {
+        width: 100%;
+    }
+
+    .about-con .about-con-right {
+        padding-left: 0px;
+        margin-top: 10px;
+    }
+}
+
+.Our-Team {
+    text-align: center;
+    width: 70%;
+    margin: 20px auto;
+}
+
+h3 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.Our-Team p {
+    color: #5c5959;
+}
+
+.cards {
+    text-align: center;
+
+}
+
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 5px;
+    flex-wrap: nowrap;
+
+
+
+
+}
+
+.card span {
+    color: #5c5959;
+}
+
+.card {
+
+    align-items: center;
+    padding: 0px;
+    border-radius: 10px;
+    width: 300px;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.question-with-button {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    padding: 30px;
+    flex-wrap: wrap;
+
+}
+
+.question-text {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.custom-button {
+    background-color: #e50000;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.custom-button:hover {
+    background-color: #c40000;
+}
+
+.arrow {
+    font-size: 18px;
+}
